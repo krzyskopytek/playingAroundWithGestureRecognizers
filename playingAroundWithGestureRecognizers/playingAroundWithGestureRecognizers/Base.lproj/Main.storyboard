@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tap-->
+        <scene sceneID="EMp-5Y-yfn">
+            <objects>
+                <viewController id="r9o-tW-LqY" customClass="TapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9dF-Cw-mwc"/>
+                        <viewControllerLayoutGuide type="bottom" id="lp1-vh-UXH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nSP-vp-Xxw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1o-XY-PDf">
+                                <rect key="frame" x="60" y="60" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ezd-Yb-eoY"/>
+                                    <constraint firstAttribute="width" constant="280" id="bAO-pY-ewe"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tap Gesture">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Iv-8a-fdq">
+                                <rect key="frame" x="110" y="234" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w1o-XY-PDf" firstAttribute="leading" secondItem="nSP-vp-Xxw" secondAttribute="leadingMargin" constant="40" id="oxa-Jf-ldA"/>
+                            <constraint firstItem="w1o-XY-PDf" firstAttribute="top" secondItem="9dF-Cw-mwc" secondAttribute="bottom" constant="40" id="uGA-FB-CAT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tap" image="first" id="dxV-YU-Kmv"/>
+                    <connections>
+                        <outlet property="testView" destination="2Iv-8a-fdq" id="MOa-lr-8f3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oCo-Sg-4Kr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="-1455"/>
+        </scene>
+        <!--Swipe-->
+        <scene sceneID="Ob8-pv-6o6">
+            <objects>
+                <viewController id="cym-Hi-Htv" customClass="SwipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5w2-4V-szO"/>
+                        <viewControllerLayoutGuide type="bottom" id="6iv-vX-S1V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5qd-CG-gcf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiT-2M-9mv">
+                                <rect key="frame" x="60" y="60" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="cQW-ht-sCn"/>
+                                    <constraint firstAttribute="height" constant="40" id="jdC-SQ-gYV"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Swipe Gesture">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNe-rx-1FA">
+                                <rect key="frame" x="0.0" y="236" width="414" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8T-hf-kuK">
+                                <rect key="frame" x="414" y="236" width="414" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNF-XG-2Wc">
+                                <rect key="frame" x="-414" y="236" width="414" height="100"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XiT-2M-9mv" firstAttribute="top" secondItem="5w2-4V-szO" secondAttribute="bottom" constant="40" id="F5u-8b-84t"/>
+                            <constraint firstItem="XiT-2M-9mv" firstAttribute="leading" secondItem="5qd-CG-gcf" secondAttribute="leadingMargin" constant="40" id="kPd-FG-hUf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Swipe" image="first" id="dAm-QS-LgP"/>
+                    <connections>
+                        <outlet property="viewBlue" destination="tNF-XG-2Wc" id="s81-vn-UrA"/>
+                        <outlet property="viewGreen" destination="g8T-hf-kuK" id="0XH-mV-uFg"/>
+                        <outlet property="viewOrange" destination="iNe-rx-1FA" id="HtZ-8A-xlg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTD-NB-KHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="-743"/>
+        </scene>
+        <!--Pan-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="PanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g95-A6-ieE">
+                                <rect key="frame" x="60" y="60" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="DVe-wb-PTH"/>
+                                    <constraint firstAttribute="height" constant="40" id="ya0-Zt-7eP"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pan Gesture">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g95-A6-ieE" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="40" id="VzQ-SS-yn3"/>
+                            <constraint firstItem="g95-A6-ieE" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="40" id="pN3-0T-4Yy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pan" image="first" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031" y="-44"/>
+        </scene>
+        <!--Pinch-->
+        <scene sceneID="SpO-a1-4OU">
+            <objects>
+                <viewController id="bps-2W-jWb" customClass="PinchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lG5-xu-2fv"/>
+                        <viewControllerLayoutGuide type="bottom" id="ph3-II-9LU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nao-J8-tXm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="289-cN-AOz">
+                                <rect key="frame" x="60" y="60" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="cUW-F9-TJu"/>
+                                    <constraint firstAttribute="height" constant="40" id="g7C-K3-0Mt"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pinch Gesture">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="289-cN-AOz" firstAttribute="top" secondItem="lG5-xu-2fv" secondAttribute="bottom" constant="40" id="JbN-hf-uyu"/>
+                            <constraint firstItem="289-cN-AOz" firstAttribute="leading" secondItem="Nao-J8-tXm" secondAttribute="leadingMargin" constant="40" id="Kug-oV-GGR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pinch" image="first" id="VM5-D1-HNd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcI-cT-zDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018" y="685"/>
+        </scene>
+        <!--Rotation-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="RotationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qU-vs-B7m">
+                                <rect key="frame" x="60" y="60" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UOh-g9-HpB"/>
+                                    <constraint firstAttribute="width" constant="280" id="glE-LM-b4J"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rotation Gesture">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1qU-vs-B7m" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="40" id="0od-q4-W4a"/>
+                            <constraint firstItem="1qU-vs-B7m" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="40" id="yau-aD-xhP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rotation" image="first" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="1391"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="r9o-tW-LqY" kind="relationship" relationship="viewControllers" id="vsZ-9y-Pzi"/>
+                        <segue destination="cym-Hi-Htv" kind="relationship" relationship="viewControllers" id="HbO-ax-rtO"/>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="bps-2W-jWb" kind="relationship" relationship="viewControllers" id="Ief-hL-tus"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-876" y="868"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>
